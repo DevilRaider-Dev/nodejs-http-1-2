@@ -7,7 +7,6 @@ const path = require('path')
 const server = http.createServer((req, res) => {
     let filePath = req.url === '/' ? '/index.html' : req.url
     let ext = path.extname(req.url)
-    console.log(ext)
     let contentType = 'text/html'
     switch (ext) {
         // Level 2-1
